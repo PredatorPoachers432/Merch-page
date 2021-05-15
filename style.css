@@ -1,0 +1,244 @@
+html
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background-color: black;
+}
+
+
+.logo
+{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+/********* desktop navigation Menu ***********/
+
+.nav-menu
+{
+    border: 1px solid gray;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    transition: 1s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-link
+{
+    margin-top: -2.9em;
+}
+
+nav ul li a:hover
+{
+    color: royalblue;
+    transition: .5s ease-in-out;
+}
+
+.nav-link a::after
+{
+    content: "";
+    border: 1px solid gray;
+    margin-left: 1.5em;
+}
+
+.nav-link a:last-child::after
+{
+    border-style: none;
+}
+
+nav ul li
+{
+    display: flex;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+nav ul li a
+{
+   padding: .5em;
+   text-decoration: none;
+   color: black;
+}
+
+/********* End of desktop navigation ***********/
+
+
+
+
+
+
+/********** Hamburger Menu - mobile menu ************/
+
+.hamburger-menu
+{
+    width: 1em;
+    padding-left: 1em;
+    color: black;
+    cursor: pointer;
+    margin-top: 1.5em;
+    visibility: hidden;
+}
+
+.bar-1
+{
+    background-color: black;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+}
+.bar-2
+{
+    background-color: black;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+}
+.bar-3
+{
+    background-color: black;
+    width: 25px;
+    height: 4px;
+    margin: 4px 0;
+}
+
+
+
+
+
+
+/********** Media Query for hamburger menu at 500px **********/
+
+@media screen and (max-width: 800px)
+{
+    .hamburger-menu
+    {
+        visibility: visible;
+    }
+
+    nav ul li a
+    {
+        padding: 1.5em;
+        width: 100%;
+        font-size: 15px;
+        display: block;
+    }
+
+    .nav-link
+    {
+        border: 2px solid gray;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        width: 700px;
+        margin-top: .3em;
+        margin-left: -2em;
+        opacity: 0.8;
+        display: none;
+    }
+
+    .nav-link a::after
+    {
+        content: "";
+        border: none;
+    }
+
+}
+
+/*********** end of full mobile menu ************/
+
+
+
+
+
+
+/******** Social Media links  ************/
+
+.links
+{
+    float: right;
+    margin-top: -1.3em;
+    font-size: 1.2em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.links-a
+{
+    padding: .2em
+}
+
+.links-a:hover
+{
+    transition: .5s ease-in-out;
+    transform: scale(2, 2);
+}
+
+/******** End of social media links ************/
+
+
+
+
+
+
+
+
+/******** construct pop up ***********/
+
+/* .construct-pop-up
+{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 80px;
+    background-color: white;
+}
+
+.close-construct-pop-up
+{
+    text-align: end;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: -.5em;
+}
+
+.construct-pop-up-body
+{
+    width: 75%;
+    color: black;
+    font-size: 22px;
+    padding: .5em;
+    border: 1px solid black;
+    padding-bottom: .5em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.construct-pop-up-text
+{
+    text-align: center;
+} */
+
+/******** construct pop up ***********/
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+    font-family: 'Titillium Web', sans-serif;
+}
